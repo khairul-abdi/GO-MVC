@@ -3,7 +3,7 @@ Learning golang with create api
 
 This tutorial is split into 7 chapter.
 
-Chapter 1 : [Simple Rest API]()
+Chapter 1 : [Simple Rest API](https://github.com/khairul-abdi/GO-MVC/tree/main/simple_rest_API)
 
 Chapter 2 : Using Config File
 
