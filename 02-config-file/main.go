@@ -8,6 +8,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
+	"github.com/khairul-abdi/GO-MVC/02-config-file/config"
+	// "github.com/jacky-htg/api-go/02-config-file/config"
 )
 
 type User struct {
@@ -31,7 +33,7 @@ func main() {
 	router.HandleFunc("/api/users/{id}", GetUserEndPoint).Methods("GET")
 
 	fmt.Println("server started at :9000")
-	http.ListenAndServe(":9000", router)
+	http.ListenAndServe(config.GetString("server.address"), router)
 }
 
 func GetUsersEndPoint(w http.ResponseWriter, r *http.Request) {
